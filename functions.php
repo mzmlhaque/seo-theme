@@ -105,7 +105,10 @@ add_action( 'widgets_init', 'seo_bithorse_widgets_init' );
  * Enqueue scripts and styles.
  */
 function seo_bithorse_scripts() {
-	wp_enqueue_style( 'seo-bithorse-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'stock-theme-default', get_template_directory_uri(). '/assets/css/default.css', array(),'1.0' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri(). '/assets/css/bootstrap.min.css', array(),'3.3.7' );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri(). '/assets/css/font-awesome.min.css', array(),'4.7' );
+	wp_enqueue_style( 'stock-theme-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'seo-bithorse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
