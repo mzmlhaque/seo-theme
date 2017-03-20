@@ -21,29 +21,41 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'seo-bithorse' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'seo-bithorse' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<div class="header-area">
+		<div class="container">
+			<div class="row">
+				<div class="header-top">
+					<div class="col-md-6">
+						<div class="header-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-skype"></i></a>
+							<a href="#"><i class="fa fa-pinterest"></i></a>
+							<a href="#"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="header-contact">
+							<a href=""><i class="fa fa-phone"></i>+22 666-888-999</a>
+							<a href=""><i class="fa fa-envelope"></i>sepexpert@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="header-navbar">
+					<div class="col-md-3">
+						<div class="site-logo">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url(get_template_directory_uri().'/assets/images/site-logo.png')?>" alt="SEO"></a>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="main-menu">
+							<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
