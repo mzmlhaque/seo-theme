@@ -98,6 +98,15 @@ function seo_bithorse_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Widgets', 'seo-bithorse' ),
+		'id'            => 'footer_widgets',
+		'description'   => esc_html__( 'Add widgets here to display in footer.', 'seo-bithorse' ),
+		'before_widget' => '<div class="col-md-3"><div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'seo_bithorse_widgets_init' );
 

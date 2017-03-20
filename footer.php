@@ -14,11 +14,22 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'seo-bithorse' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'seo-bithorse' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'seo-bithorse' ), 'seo-bithorse', '<a href="https://automattic.com/" rel="designer">Bithorse</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<?php if(is_active_sidebar('footer_widgets')) : ?>
+				<div class="row">
+					<?php dynamic_sidebar('footer_widgets')?>
+				</div>
+			<?php endif; ?>
+		</div>
+		<div class="footer-copyright-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright">Copyright &copy;2017, All Right Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
