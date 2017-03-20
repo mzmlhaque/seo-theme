@@ -16,8 +16,11 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<?php if(is_active_sidebar('footer_widgets')) : ?>
-				<div class="row">
-					<?php dynamic_sidebar('footer_widgets')?>
+				<div class="footer-widget-area">
+					<div class="row">
+						<?php dynamic_sidebar('footer_widgets')?>
+					</div>
+					<div class="footer-widget-overlay"></div>
 				</div>
 			<?php endif; ?>
 		</div>

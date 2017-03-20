@@ -11,19 +11,133 @@ Text Domain: seo-bithorse
 Tags:
 */
 @font-face {
-    font-family: 'Proxima Nova Rg';
-    src: url('ProximaNova-Regular.eot');
-    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-    url('ProximaNova-Regular.woff2') format('woff2'),
-    url('ProximaNova-Regular.woff') format('woff'),
-    url('ProximaNova-Regular.ttf') format('truetype'),
-    url('ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-family: 'Proxima Nova';
+    src: url('assets/fonts/ProximaNova-Regular.eot');
+    src: url('assets/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('assets/fonts/ProximaNova-Regular.woff') format('woff'),
+    url('assets/fonts/ProximaNova-Regular.ttf') format('truetype'),
+    url('assets/fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 body{
-    font-family: 'Proxima Nova Rg';
+    font-family: 'Proxima Nova';
+}
+
+.header-top-bar {
+  background-color: #19B5FE;
+  color: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #16A0E1;
+}
+.header-a {
+}
+.header-top-bar a {
+  color: #fff;
+  font-size: 14px;
 }
 
 
+#primary-menu ul {
+}
+.main-menu ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 17px;
+  text-transform: uppercase;
+    color: #141414;
+}
+.main-menu ul li.current-menu-item a {
+    color: #19B5FE;
+}
+.main-menu ul {
+  float: right;
+  padding-top: 10px;
+}
+.header-social {
+  float: left;
+}
+.header-social a{
+    padding: 0 7px;
+    border-right: 1px solid #16A0E0;
+}
+.header-social a:last-child{
+    padding-right: 0;
+    border-right: none;
+}
+.header-contact {
+    float: right;
+}
+.header-contact a:last-child {
+    border: 0;
+    padding-right: 0;
+}
+.header-contact a {
+    padding: 0 25px;
+    border-right: 1px solid #2E9ED3;
+    line-height: 18px;
+}
+.header-contact a i {
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.header-nav-bar {
+    padding: 15px 0;
+}
+
+.site-footer{
+    background-color: #131313;
+    color: #9d9d9d;
+}
+
+.site-footer a{
+    color: #9d9d9d;
+}
+
+.site-footer h4{
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.footer-copyright-area {
+    color: #4d4d4d;
+    border-top: 1px solid #2c2c2c;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-widget-area{
+    padding: 100px 0;
+    background-image: url("assets/images/footer-background.jpg");
+    background-size: cover;
+    position: relative;
+
+}
+
+
+.footer-widget-area .col-md-3{
+    margin: 0;
+    padding: 0;
+
+}
+.footer-widget-area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.footer-widget-area ul li a:before{
+    font-family: FontAwesome;
+    content: "\f105";
+    margin-right: 10px;
+
+}

@@ -22,9 +22,9 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<div class="header-area">
-		<div class="container">
-			<div class="row">
-				<div class="header-top">
+		<div class="header-top-bar">
+			<div class="container">
+				<div class="row">
 					<div class="col-md-6">
 						<div class="header-social">
 							<a href="#"><i class="fa fa-facebook"></i></a>
@@ -43,8 +43,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="header-navbar">
+		</div>
+
+		<div class="header-nav-bar">
+			<div class="container">
+				<div class="row">
 					<div class="col-md-3">
 						<div class="site-logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url(get_template_directory_uri().'/assets/images/site-logo.png')?>" alt="SEO"></a>
