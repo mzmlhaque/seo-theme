@@ -15,6 +15,13 @@
 get_header(); ?>
 
 	<div class="container">
+		<div class="slider-area" style="margin-bottom: 30px;">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="http://placehold.it/1100x380" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
 
 		<div class="row">
 			<div class="col-md-8">

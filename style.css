@@ -116,19 +116,14 @@ body{
 }
 
 .footer-widget-area{
-    padding: 100px 0;
+    padding: 100px 20px;
     background-image: url("assets/images/footer-background.jpg");
-    background-size: cover;
+    background-size: contain;
     position: relative;
 
 }
 
 
-.footer-widget-area .col-md-3{
-    margin: 0;
-    padding: 0;
-
-}
 .footer-widget-area ul{
     margin: 0;
     padding: 0;
